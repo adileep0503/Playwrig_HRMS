@@ -8,7 +8,9 @@ test('Add Employee Test Case', async({page})=>{
     await obj.login();
     //Add Employee Steps
     await obj.OpenAddEmployeePage();
+    await obj.waitFun();
     await obj.AddEmployee();
+    await obj.getEmpID();
+    await obj.verifyEmpCreated();
     await obj.logout();
-
 });
