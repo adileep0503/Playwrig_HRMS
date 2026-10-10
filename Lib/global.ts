@@ -13,29 +13,31 @@ export class global{
     public password="sureshit"
     public firstNmae="Dileep"
     public lastName="Kumar"
-    public empid : number=123456;
-
-
+    public empid;
+    public frame;
 
     //************Objects/Element Locators of Application**************//
-
     public txtBox_Username="//input[@name='txtUserName']";
     public txtBox_Password="//input[@name='txtPassword']";
     public bth_Login="//input[@type='Submit']";
     public link_Logout="//a[text()='Logout']";
     public hover_PIM="PIM"
-    public Add_Employee="Add Employee"
-    public frame_empInfo : string    = "//iframe[@id='rightMenu']";
-public button_add : string       = "//input[@value='Add']";
-public textbox_empfirstname : string = "//input[@name='txtEmpFirstName']";
-public textbox_emplastname : string  = "//input[@name='txtEmpLastName']";
-public button_save : string          = "//input[@value='Save']";
+    public Add_Employee="Add Employee";
+    public frame_Loc="//iframe[@id='rightMenu']"
+    public txtbox_FirstName="//input[@id='txtEmpFirstName']"
+    public txtbox_LastName="//input[@name='txtEmpLastName']"
+    public txtbox_EmpID="//input[@name='txtEmployeeId']"
+    public btn_Save="//input[@class='savebutton']"
+    public btn_Back="//input[@value='Back']"
+    public headingPersonal="//span[@class='parent personal']"
+    public headingEmpInfo="//h2"
+    public DD_SearchBy='[name="loc_code"]';
+    public txtbox_SearchFor="//input[@id='loc_name']"
+    public btn_Search="//input[@value='Search']"
 
+    public link_EmpName="//tbody/tr[1]//td[3]/a[1]"
+    public btn_Edit="//input[@value='Edit']"
+    public btn_SavefromEditPage="//input[@id='btnEditPers']"
 
-//     public frame_Loc="//iframe[@id='rightMenu']"
-//     public txtbox_FirstName="//input[@id='txtEmpFirstName']"
-//     public txtbox_LastName="//input[@name='txtEmpLastName']"
-     public txtbox_EmpID="//input[@name='txtEmployeeId']"
-//     public btn_Save="//input[@class='savebutton']"
 
 }

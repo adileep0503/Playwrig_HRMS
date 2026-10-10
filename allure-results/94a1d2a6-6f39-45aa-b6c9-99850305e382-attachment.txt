@@ -1,0 +1,8 @@
+Application opened
+Login COmpleted
+Add employee Page opened
+frame entered
+New employee added
+Newly created Emp ID: 17080
+New employeed Created
+Logout COmpleted

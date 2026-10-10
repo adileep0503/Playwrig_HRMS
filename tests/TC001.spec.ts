@@ -1,7 +1,7 @@
 import {test} from '@playwright/test'
 import { general } from '../Lib/general';
 
-test('LoginLogout', async({page})=>{
+test('Login and Logout Test Case', async({page})=>{
 
     let obj=new general(page);
     await obj.openApplication();
