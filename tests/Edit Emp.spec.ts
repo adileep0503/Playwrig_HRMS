@@ -17,7 +17,6 @@ test('Delete Employee Test Case', async({page})=>{
     //Got to Employee Information Page
     await obj.backToEmpListpage();
     //await  obj.waitFun();
-    await obj.seachEmployee();
     await obj.logout();
 
 }); 

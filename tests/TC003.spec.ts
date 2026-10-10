@@ -1,7 +1,7 @@
 import {expect, test} from '@playwright/test'
 import { general } from '../Lib/general';
 
-test('Add Employee Test Case', async({page})=>{
+test('Edit Employee Test Case', async({page})=>{
     let obj=new general(page);
     await obj.openApplication();
     await obj.login();
@@ -17,6 +17,7 @@ test('Add Employee Test Case', async({page})=>{
     await obj.backToEmpListpage();
     //await  obj.waitFun();
     await obj.seachEmployee();
+    await obj.editEmployee();
     await obj.logout();
 
 });
