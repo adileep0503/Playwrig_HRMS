@@ -5,7 +5,8 @@ import { general } from '../Lib/general';
 test('Delete Employee Test Case', async({page})=>{
     let obj=new general(page);
     await obj.openApplication();
-    await obj.login();
+   //
+    await obj.login("dileep");
     //Add Employee Steps
     await obj.OpenAddEmployeePage();
     //await obj.waitFun();
@@ -15,9 +16,9 @@ test('Delete Employee Test Case', async({page})=>{
     //await obj.waitFun();
     await obj.verifyEmpCreated();
     //Got to Employee Information Page
-    await obj.backToEmpListpage();
+   // await obj.backToEmpListgit 
+    //page();
     //await  obj.waitFun();
-    await obj.seachEmployee();
     await obj.logout();
 
 }); 
